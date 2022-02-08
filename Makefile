@@ -19,14 +19,14 @@ epub: combine
     --toc
 
 word: combine
-	pandoc ${work_dir}/$(filename).md -o $(filename).docx --resource-path ${work_dir} \
+	pandoc $(filename).md -o $(filename).docx --resource-path ${work_dir} \
     --epub-metadata $(include_dir)/metadata.xml \
     --css $(include_dir)/epub.css \
     --title-prefix $(title) \
     --toc
 
 html: combine
-	pandoc ${work_dir}/$(filename).md -o index.html --resource-path ${work_dir} \
+	pandoc $(filename).md -o index.html --resource-path ${work_dir} \
     --css $(include_dir)/html.css \
     --title-prefix $(title) \
     --toc
