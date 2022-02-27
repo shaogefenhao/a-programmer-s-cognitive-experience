@@ -2,7 +2,19 @@
 
 ## 附录 A 参考资料
 
+
+
 1. https://fs.blog/all-models-are-wrong/ 
 2. https://www.pianshen.com/article/1192882642/ 10 个要点助你成为伟大的程序员
 3. https://stevemcconnell.com/articles/cargo-cult-software-engineering
 4. https://mp.weixin.qq.com/s/b5uYAk3lUmxEba41tLTMTQ
+
+
+
+### 奥卡姆剃刀原理 收集材料
+
+
+
+1. https://zhuanlan.zhihu.com/p/36489825
+2. https://wiki.mbalib.com/zh-tw/%E5%A5%A5%E5%8D%A1%E5%A7%86%E5%89%83%E5%88%80%E5%AE%9A%E5%BE%8B
+3. 
