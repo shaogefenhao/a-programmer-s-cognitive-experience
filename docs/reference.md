@@ -13,6 +13,8 @@
 7. https://www.wenmi.com/article/pq4msa02x4nw.html 主体业务模式
 8.  《价值主体性》
 9. 皮书数据库 https://www.infoq.cn/minibook
+10. http://www.cnki.com.cn/Article/CJFDTotal-SLSB199404004.htm 面向对象认识模式的方法论意义
+11. 3步彻底明白面向对象思维（主客体） http://www.bjpowernode.com/javazixun/2515.html
 
 ## 案例
 
