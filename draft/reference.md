@@ -16,10 +16,6 @@
 10. http://www.cnki.com.cn/Article/CJFDTotal-SLSB199404004.htm 面向对象认识模式的方法论意义
 11. 3步彻底明白面向对象思维（主客体） http://www.bjpowernode.com/javazixun/2515.html
 
-## 案例
-
-1. 农业专家咨询项目的业务主客体分析
-
 ### 奥卡姆剃刀原理 收集材料
 
 
