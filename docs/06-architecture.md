@@ -161,7 +161,7 @@ CTO 别无选择。架构设计，其实也是一种对业务的抽象，如果�
 
 你可能会疑惑，我是如何将权限这样一个专题的技术方案和主客体思维挂钩的，听起来有点牵强附会。实际上，主客体思维已经成为了西方世界的基本哲学思维之一，我们可以在很多地方找到它们的影子。
 
-我找到了一篇 1995 年古老的论文《Role-based access control (RBAC): Features and motivations》，这篇论文就是从主体、客体视角下分析了 RBAC 模型。
+我找到了一篇 1995 年古老的论文《Role-based access control (RBAC): Features and motivations》[^1]，这篇论文就是从主体、客体视角下分析了 RBAC 模型。
 
 这篇文章对 RBAC 做了清晰的论述，简要的思想可以总结为：用户根据角色划分为不同的主体，操作（Operations）可以被看做客体。那么 RBAC 描述的是根据角色对用户群体划分，对其操作的控制。
 
@@ -197,11 +197,9 @@ CTO 别无选择。架构设计，其实也是一种对业务的抽象，如果�
 
 客体：行为的检查点。可以是一个方法、对象、数据、系统、第三方系统、基础设施。
 
-如果我们设计主体、客体、检查器三个接口，那么是不是可以做的万能的访问控制模型？我找到了一篇文章《A new dynamic access control scheme based on subject-object list》设想了这样一种模型，通过列表管理主体、客体清单来实现更加灵活的权限检查。
+如果我们设计主体、客体、检查器三个接口，那么是不是可以做的万能的访问控制模型？我找到了一篇文章《A new dynamic access control scheme based on subject-object list》[^2]设想了这样一种模型，通过列表管理主体、客体清单来实现更加灵活的权限检查。
 
 理想的情况下，实现不同的检查器就可以对不同的客体进行检查。不过如果抽象太高，就会带来更多的认知负担，实践价值降低。至于需要抽象到什么程度，就需要架构师来根据实际情况选择合适的模型和策略了。
-
-
 
 ## 6.5 架构的关键因素
 
@@ -297,7 +295,6 @@ CTO 别无选择。架构设计，其实也是一种对业务的抽象，如果�
 
 ## 参考资料
 
-[1] Ferraiolo, David, Janet Cugini, and D. Richard Kuhn. "Role-based access control (RBAC): Features and motivations." *Proceedings of 11th annual computer security application conference*. 1995.
-
-[2] Hwang, Min-Shiang, and Wei-Pang Yang. "A new dynamic access control scheme based on subject-object list." *Data & knowledge engineering* 14.1 (1994): 45-56.
+[^1]: Ferraiolo, David, Janet Cugini, and D. Richard Kuhn. "Role-based access control (RBAC): Features and motivations." *Proceedings of 11th annual computer security application conference*. 1995.
+[^2]: Hwang, Min-Shiang, and Wei-Pang Yang. "A new dynamic access control scheme based on subject-object list." *Data & knowledge engineering* 14.1 (1994): 45-56.
 
