@@ -15,8 +15,7 @@ epub: combine
 	pandoc $(filename).md -o $(filename).epub --resource-path ${work_dir} \
     --epub-metadata $(include_dir)/metadata.xml \
     --css $(include_dir)/epub.css \
-    --title-prefix $(title) \
-    --toc
+    --title-prefix $(title)
 
 word: combine
 	pandoc $(filename).md -o $(filename).docx --resource-path ${work_dir} \
