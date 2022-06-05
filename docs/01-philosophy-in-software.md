@@ -367,9 +367,9 @@ class OrderService {
 
 这就是： Put everthing on the table 的思想，有时候会发现合适的解决方案往往意想不到，或者被思考的早期阶段否定了。
 
-
-
 ## 1.7 否定之否定
+
+【TODO】
 
 
 
