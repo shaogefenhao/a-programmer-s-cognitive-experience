@@ -1,8 +1,8 @@
 work_dir=docs
 source=${work_dir}/*.md
 include_dir=build
-filename=高认知软件工程
-title='高认知软件工程'
+filename=程序员的认知心得
+title='程序员的认知心得'
 
 clear:
 	rm -f ${work_dir}/$(filename).md
@@ -22,6 +22,7 @@ word: combine
     --epub-metadata $(include_dir)/metadata.xml \
     --css $(include_dir)/epub.css \
     --title-prefix $(title) \
+    --reference-doc $(include_dir)/template.docx \
     --toc
 
 html: combine
