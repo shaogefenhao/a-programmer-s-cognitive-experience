@@ -1,0 +1,3 @@
+== 写在前面
+
+image::00-preface-1/test.jpeg[图片测试]

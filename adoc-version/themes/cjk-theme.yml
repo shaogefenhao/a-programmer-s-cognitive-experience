@@ -1,0 +1,20 @@
+extends: default
+font:
+  catalog:
+    merge: true
+    Noto Sans CN: NotoSansCJKsc-VF.ttf
+    Noto Sans Mono CN: NotoSansMonoCJKsc-VF.ttf
+  fallbacks:
+    - Noto Serif
+base:
+  text-align: left
+  font-color: #000000
+  font-family: Noto Sans CN
+heading:
+  font-color: #000000
+codespan:
+  font-family: Noto Sans Mono CN
+kbd:
+  font-family: $codespan-font-family
+code:
+  font-family: $codespan-font-family

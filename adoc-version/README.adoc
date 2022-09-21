@@ -1,0 +1,32 @@
+= 使用指南
+
+== Mac 原生命令
+
+Mac 安装 asciidoctor
+
+ $ brew install asciidoctor
+
+生成 HTML
+
+ $ asciidoctor -vwt -o output/mybook.html master.adoc
+
+生成 PDF
+
+ asciidoctor-pdf -a pdf-theme=./themes/cjk-theme.yml -a pdf-fontsdir="./themes;GEM_FONTS_DIR" -a scripts=cjk  master.adoc
+
+== Docker 容器命令
+
+Docker 安装
+
+ $ docker pull asciidoctor/docker-asciidoctor
+
+启动命令
+
+ $ docker run -it --rm -v $PWD:/documents asciidoctor/docker-asciidoctor
+
+运行命令和本地一致
+
+== 参考资料
+
+- https://docs.asciidoctor.org
+- Asciidoctor PDF Theming Guide for CJK issue https://github.com/asciidoctor/asciidoctor-pdf/blob/v1.5.0.beta.7/docs/theming-guide.adoc#custom-fonts
