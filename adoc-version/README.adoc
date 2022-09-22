@@ -8,11 +8,11 @@ Mac 安装 asciidoctor
 
 生成 HTML
 
- $ asciidoctor -vwt -o output/mybook.html master.adoc
+ $ asciidoctor -vwt -o output/index.html index.adoc
 
 生成 PDF
 
- asciidoctor-pdf -a pdf-theme=./themes/cjk-theme.yml -a pdf-fontsdir="./themes;GEM_FONTS_DIR" -a scripts=cjk  master.adoc
+ asciidoctor-pdf -a pdf-theme=./themes/cjk-theme.yml -a pdf-fontsdir="./themes;GEM_FONTS_DIR" -a scripts=cjk -o output/index.pdf  index.adoc
 
 == Docker 容器命令
 

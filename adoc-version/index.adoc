@@ -1,0 +1,49 @@
+= 《程序员的认知心得》
+:author: 少个分号
+:email: 12037783@qq.com
+:revnumber: 1.0
+:revdate: 2022-10-01
+:doctype: book
+:toc: left
+:toclevels: 2
+:toc-title: 《程序员的认知心得》
+:icons: font
+//:imagesdir:./chapters
+:data-uri:
+:lang: zh_CN
+:language: java
+:toc-title: 目录
+:preface-title: 前言
+:version-label: 版本
+:last-update-label: 最近更新
+:figure-caption: 图
+
+[00-preface-1]
+include::00-preface-1.adoc[]
+
+[00-preface-2]
+include::00-preface-2.adoc[]
+
+[01-philosophy-in-software]
+include::01-philosophy-in-software.adoc[]
+
+[02-logic-in-software]
+include::02-logic-in-software.adoc[]
+
+[03-model-thinking]
+include::03-model-thinking.adoc[]
+
+[04-business]
+include::04-business.adoc[]
+
+[05-domain-model]
+include::05-domain-model.adoc[]
+
+[06-architecture]
+include::06-architecture.adoc[]
+
+[07-think-team-in-system]
+include::07-think-team-in-system.adoc[]
+
+[11-ending]
+include::11-ending.adoc[]
