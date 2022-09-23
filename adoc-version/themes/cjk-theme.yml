@@ -7,6 +7,7 @@ font:
   fallbacks:
     - Noto Serif
 base:
+  align: left
   text-align: left
   font-color: #000000
   font-family: Noto Sans CN
