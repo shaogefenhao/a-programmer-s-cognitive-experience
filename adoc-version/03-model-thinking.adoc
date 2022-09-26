@@ -354,8 +354,7 @@ Lexical 和 Syntax 往往可以看成一体，Grammar 不太一样，在一些�
 那么通过时间和空间的思维，可以帮团队裁剪一套软件设计过程中的模型，如下图：
 
 
-
-image::./03-model-thinking/the-model-dimensions.jpg[软件模型的两个维度,80%,pdfwidth=80%,scaledwidth=80%,align="center",title="软件模型的两个维度"]image::./03-model-thinking/the-model-dimensions.jpg[软件模型的两个维度,80%,pdfwidth=80%,scaledwidth=80%,align="center",title="软件模型的两个维度"]
+image::./03-model-thinking/the-model-dimensions.jpg[软件模型的两个维度,80%,pdfwidth=80%,scaledwidth=80%,align="center",title="软件模型的两个维度"]
 
 === 3.6 总结
 
