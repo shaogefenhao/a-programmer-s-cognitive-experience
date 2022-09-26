@@ -362,7 +362,7 @@ image::./06-architecture/architecture-road-map-sample1.png[架构演进示例,80
 
 一些项目管理工具是可以提供一些架构演进工具的，比如 roadmunk.com 网站就提供了如下风格的架构演进地图：
 
-image::./06-architecture/architecture-road-map-sample2.png[架构演进示例,80%,pdfwidth=80%,scaledwidth=80%,align="center",title="架构演进示例"]
+
 
 图片来源：Enterprise Architecture Roadmap https://www.productplan.com/glossary/enterprise-architecture-roadmap/
 
