@@ -290,7 +290,7 @@ Goods{name,price}
 
 下面这张图为使用联合国为概念出发绘制的概念图，用来描述概念和概念之间的关系。
 
-image::./02-logic-in-software/concept-map-of-un.jpg[解释联合国的概念图,50%,pdfwidth=50%,scaledwidth=50%,align="center",title="解释联合国的概念图"]
+image::./02-logic-in-software/concept-map-of-un.png[解释联合国的概念图,align="center",title="解释联合国的概念图"]
 
 当然，你会发现“成员”的概念下面只有中国和美国，这是因为全球 200 多个国家和地区也画不下。到目前为止，概念图也没有标准，那么也不存在概念图的“对错”。
 
@@ -316,7 +316,7 @@ IHMC（Human & Machine Cognition）提供了一套专业的概念图绘制工具
 
 那么为了描述这个标签就可以用概念的“内涵”、“外延”来描述，这个概念就可以在日常对话中阐述被描述对象的特征。当一个人无法清晰的描述概念时，可以通过概念图可视化表达出来。
 
-image::./02-logic-in-software/concept-map-of-concept.jpg[关于概念本身的概念图,50%,pdfwidth=50%,scaledwidth=50%,align="center",title="关于概念本身的概念图"]
+image::02-logic-in-software/concept-map-of-concept.png[关于概念本身的概念图,align="center",title="关于概念本身的概念图"]
 
 ==== 3.7.2 常见的概念图
 
@@ -334,7 +334,7 @@ image::./02-logic-in-software/concept-map-of-concept.jpg[关于概念本身的�
 
 实际上同事 A 是想表达对编程职业生涯的担忧，“Java” 在他的意识里是指的相关整套技术体系，同事 B 想说的只是用来完成编码的计算机语言。我们用概念图看下“编程”这个概念，再来看他们讨论的是不是同一个东西：
 
-image::02-logic-in-software/concept-map-of-programming.jpg[关于编程的概念图,50%,pdfwidth=50%,scaledwidth=50%,align="center",title="关于编程的概念图"]
+image::02-logic-in-software/concept-map-of-programming.png[关于编程的概念图,align="center",title="关于编程的概念图"]
 
 我们真的只是缺乏编程思想吗？
 
@@ -352,7 +352,7 @@ image::02-logic-in-software/concept-map-of-programming.jpg[关于编程的概念
 
 我整理了一份侧重于 Java、Servlet、Spring 家族一系列概念的概念图，这里主要关注几个比较难以分清的概念，真实的 Java 服务器开发领域所涉及的概念还非常多。
 
-image::02-logic-in-software/concept-map-of-java-server-programming.jpg[关于 Java 服务器编程概念图,80%,pdfwidth=80%,scaledwidth=80%,align="center",title="关于 Java 服务器编程概念图"]
+image::02-logic-in-software/concept-map-of-java-server-programming.jpg[关于 Java 服务器编程概念图,align="center",title="关于 Java 服务器编程概念图"]
 
 作为语言的 Java 衍生出来的概念是相关的运行环境、库和框架。Java 字节码运行在由 JRE 运行环境提供的 JVM 虚拟机之上的，Tomcat 是一个 Java 应用程序，并提供了 Servlet 容器负责处理 HTTP 的请求和响应进行，而我们做的应用程序（WAR）只是一个寄生兽，挂靠在 Servlet 容器上负责处理业务逻辑。
 
@@ -368,7 +368,7 @@ image::02-logic-in-software/concept-map-of-java-server-programming.jpg[关于 Ja
 
 随着前端开发工程化的发展，现代前端开发体系爆炸性的增长，每天都在出现新概念，那么学习前端到底该学些什么呢。下面我整理了一个前端常见概念点的概念图：
 
-image::02-logic-in-software/concept-map-of-frontend-programming.jpg[关于前端开发的概念图,80%,pdfwidth=80%,scaledwidth=80%,align="center",title="关于前端开发的概念图"]
+image::02-logic-in-software/concept-map-of-frontend-programming.jpg[关于前端开发的概念图,align="center",title="关于前端开发的概念图"]
 
 前端开发在 Node.js 出现之前还是非常简单和容易理解的，在浏览器中运行的页面无非是 HTML、CSS、JavaScript。Node.js 把 Chromium 的 JavaScript 引擎单独拿出来运行 JavaScript 脚本，并提供了很多操作系统的 API，形成独立的运行平台。JavaScript 的应用场景从浏览器中脱离出来，变得无比开阔。
 
@@ -396,7 +396,7 @@ Node.js 平台上也可以运行包管理程序来对各种依赖管理，这就
 
 . *构建联系，得到命题。* 将分化后的概念，通过连接线连接起，连接过程中给出一个合理的连接词，概念+连接词+概念成为一个完整的命题。例如“鱼香是一种口味”。
 
-image::02-logic-in-software/concept-map-of-dishes.jpg[关于鱼香肉丝的辨析,80%,pdfwidth=80%,scaledwidth=80%,align="center",title="关于鱼香肉丝的辨析"]
+image::02-logic-in-software/concept-map-of-dishes.png[关于鱼香肉丝的辨析,align="center",title="关于鱼香肉丝的辨析"]
 
 上面是从操作流程上归纳创建概念图的方法，另外在构建的逻辑上，概念的关系一般有下面两条线索：
 
