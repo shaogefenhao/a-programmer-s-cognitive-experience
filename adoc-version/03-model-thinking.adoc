@@ -40,13 +40,13 @@
 
 在斯科特·佩奇在《模型思维》footnote:[参考图书：《模型思维》https://book.douban.com/subject/34893628/]一书中，使用了一张形象的图例如下所示：
 
-image::./03-model-thinking/layers-of-infomation.jpg[信息的层次,50%,pdfwidth=50%,scaledwidth=50%,align="center",title="信息的层次"]
+image::./03-model-thinking/layers-of-infomation.png[信息的层次,align="center",title="信息的层次"]
 
 我们可以尝试用这种方式来看待原本很困难的知识，比如去简化复杂问题，并理解它。通过模型思维来看待软件开发，我们会发现，软件从设计到开发的过程就是各种模型的转换。
 
 我整理了一个图表，说明了一款软件从商业探索开始到编译成可交付的软件整个过程中可能会用到的模型。
 
-image::./03-model-thinking/model-of-ee.jpg[软件工程中的模型,60%,pdfwidth=60%,scaledwidth=60%,align="center",title="软件工程中的模型"]
+image::./03-model-thinking/model-of-ee.png[软件工程中的模型,align="center",title="软件工程中的模型"]
 
 我将模型分为形式化和非形式化两种。形式化的模型是精确描述的模型，例如表达领域模型的 UML、ER 图，而非形式化的模型是一些非精确描述的模型，主要用来做商业、业务探索。
 
@@ -118,7 +118,7 @@ ENIAC 是公认第一个满足图灵模型的计算电子计算机，ENIAC 通�
 
 想象一台由继电器组成的计算机，如果每一次执行指令计算机会发出 “嘚” 的声音，图灵模型就是程序开始运行后线性的 “嘚嘚嘚……嘚嘚停”。冯·诺依曼的模型就是上电后 ”嘚嘚嘚嘚嘚……中断……嘚嘚嘚嘚嘚”，并反复循环。冯·诺依曼让计算机永不停息，并产生交互效果。
 
-image::03-model-thinking/von-neumann-model.jpg[冯诺依曼简化模型,80%,pdfwidth=80%,scaledwidth=80%,align="center",title="冯诺依曼简化模型"]
+image::03-model-thinking/von-neumann-model.png[冯诺依曼简化模型,align="center",title="冯诺依曼简化模型"]
 
 我将计算机科学基础模型展开，每种模型都能作为计算机科学的原料：
 
@@ -353,7 +353,7 @@ Lexical 和 Syntax 往往可以看成一体，Grammar 不太一样，在一些�
 
 那么通过时间和空间的思维，可以帮团队裁剪一套软件设计过程中的模型，例如：
 
-image::./03-model-thinking/the-model-dimensions.jpg[软件模型的两个维度,80%,pdfwidth=80%,scaledwidth=80%,align="center",title="软件模型的两个维度"]
+image::03-model-thinking/the-model-dimensions.png[软件模型的两个维度,align="center",title="软件模型的两个维度"]
 
 === 3.6 总结
 
