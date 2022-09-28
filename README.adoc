@@ -14,13 +14,13 @@
 
 == 电子书构建指南
 
-这本电子书最初使用 Markdown 构建，但是后来发现 asciidoctor 相比 Markdown 更适合多章节的内容结构，因此切换为 asciidoctor 构建。
+这本电子书最初使用 Markdown 构建，但是后来发现 Asciidoctor 相比 Markdown 更适合多章节的内容结构，因此切换为 Asciidoctor 构建。
 
 参考本项目，你也可以构建出自己的电子书（HTML、PDF），参考命令如下。
 
 === Mac 原生命令
 
-Mac 安装 asciidoctor：
+Mac 安装 Asciidoctor：
 
  $ brew install asciidoctor
 
