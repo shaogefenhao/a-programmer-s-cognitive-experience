@@ -512,6 +512,8 @@ image::06-architecture/rbac-and-subjects.png[RBAC 和 主体,align="center",titl
 
 image::06-architecture/jtw-example.png[JWT 中的线索,align="center",title="JWT 中的线索"]
 
+图片来源：https://jwt.io/
+
 这里可能有人会问，客体不在令牌中吗？答案是肯定的，令牌记录了用户的身份，就像将军的虎符，能被指挥的军队就是客体。
 
 在计算机系统中，我们往往会将权限和功能绑定记录到数据库中当做客体存在，这就引出了下一个需要讨论的话题，鉴权客体的设定，会直接影响是否能开发出高效易懂的权限检查程序。
