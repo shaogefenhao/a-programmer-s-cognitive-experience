@@ -28,7 +28,7 @@
 
 现实是，我们往往马上关注到数据库的设计上，想当然的设计出一些数据库表，然后着手于界面、网络请求、如何操作数据库上，业务逻辑被封装到一个叫做 Service 对象上或散落在其他地方，然后基于对数据的操作。
 
-image::05-domain-model/data-driven-design.jpg[面向数据库的编程方法,80%,pdfwidth=80%,scaledwidth=80%,align="center",title="面向数据库的编程方法"]
+image::05-domain-model/data-driven-design.png[面向数据库的编程方法,align="center",title="面向数据库的编程方法"]
 
 一般来说这种方法也没有大的问题，甚至工作的很好，Martin Fowler 将这种方法称作为事务脚本（Transaction Script）。还有其他的设计模式，将用户界面、业务逻辑、数据存储作为一个“模块”，可以实现用户拖拽就可以实现简单的编程，.net、VF曾经提供过这种设计模式，这种设计模式叫做 SMART UI。
 
@@ -46,6 +46,8 @@ image::05-domain-model/data-driven-design.jpg[面向数据库的编程方法,80%
 
 我们在各个餐厅交流的时候，发现这并不是一个 IT 系统的问题。某些餐厅，所有的服务员都可以收银，即使用纸和笔，收银员划掉菜品没有更新小计，另外的服务员结账时会发生错误。于是餐厅，约定修改菜品必须更新订单总价。
 
+image::05-domain-model/system-error-when-data-unconsistant.png[一致性问题,align="center",title="一致性问题"]
+
 我们吸收到这个业务逻辑到 IT 系统中来，并意识到系统中这里有一些隐藏的模型：
 
 * 订单。
@@ -53,11 +55,11 @@ image::05-domain-model/data-driven-design.jpg[面向数据库的编程方法,80%
 
 我们决定，抽象出订单、菜品的对象，菜品不应该被直接修改，而是通过订单才能修改，无论任何情况，菜品的状态变化都通过订单来完成。
 
-复杂系统的状态被清晰的定义出来了， `Service` 承担处理各个应用场景的差异，模型对象处理一致的业务逻辑。
+复杂系统的状态被清晰的定义出来了， Service 承担处理各个应用场景的差异，模型对象处理一致的业务逻辑。
 
 在接触 Eric Evans 的 DDD 概念之前，我们没有找到这种开发模式的名字，暂时称作为 *朴素模型驱动开发*。
 
-image::05-domain-model/model-driven-design.jpg[朴素模型驱动开发,80%,pdfwidth=80%,scaledwidth=80%,align="center",title="朴素模型驱动开发"]
+image::05-domain-model/model-driven-design.png[朴素模型驱动开发,align="center",title="朴素模型驱动开发"]
 
 ==== 模型和领域模型
 
@@ -88,7 +90,7 @@ image::05-domain-model/model-driven-design.jpg[朴素模型驱动开发,80%,pdfw
 * 指导权限。
 * 指导微服务划分（有必要的情况）。
 
-image::05-domain-model/process-of-software-design.jpg[软件设计过程,80%,pdfwidth=80%,scaledwidth=80%,align="center",title="软件设计过程"]
+image::05-domain-model/process-of-software-design.png[软件设计过程,align="center",title="软件设计过程"]
 
 在我们之前的例子中，收银员需要负责处理收银的操作，同时表达这个餐厅有收银员这样的一个状态。收银员收到钱并记录到账本中，账本负责处理记录钱的业务逻辑，同时表达系统中有多少钱的状态。
 
@@ -105,7 +107,7 @@ image::05-domain-model/process-of-software-design.jpg[软件设计过程,80%,pdf
 * 业务复杂度。软件设计中和技术实现相关的问题，例如处理用户输入，持久化模型，处理网络通信等。
 * 技术复杂度。软件设计中和业务逻辑相关的问题，例如为订单添加商品，需要计算订单总价，应用折扣规则等。
 
-image::05-domain-model/two-kinds-of-complexity.jpg[技术复杂度和业务复杂度,80%,pdfwidth=80%,scaledwidth=80%,align="center",title="技术复杂度和业务复杂度"]
+image::05-domain-model/two-kinds-of-complexity.png[技术复杂度和业务复杂度,align="center",title="技术复杂度和业务复杂度"]
 
 当我们分析业务并建模时，不要关注技术实现，会带来极大的干扰。和上一章聊到的断电法理解业务一样，就是在这个过程把“电”断掉，技术复杂度中的用户交互想象成人工交谈，持久化想象成用纸和笔记录。
 
@@ -115,7 +117,7 @@ DDD 还强调，业务建模应该充分的和业务专家在一起，不应该�
 
 这个建模过程可以是技术人员和业务专家一起讨论出来，也可以是使用 ”事件风暴“ 这类工作坊的方式完成。这个过程非常重要，DDD 把这个过程称作 *协作设计*。通过这个过程，我们得到了领域模型（这里以简单的图表表示，也可以用 UML）。
 
-image::05-domain-model/model-sample-v1.jpg[领域模型 v1,80%,pdfwidth=80%,scaledwidth=80%,align="center",title="领域模型 v1"]
+image::05-domain-model/model-sample-v1.png[领域模型 v1,align="center",title="领域模型 v1"]
 
 上图使我们通过业务分析得到的一个非常基本的领域模型，我们的点餐系统中，会有座位、订单、菜品、评价几个模型。一个座位可以由多个订单，每个订单可以有多个菜品和评价。同时，菜品也会被不同的订单使用。
 
@@ -134,12 +136,12 @@ image::05-domain-model/model-sample-v1.jpg[领域模型 v1,80%,pdfwidth=80%,scal
 
 这个过程叫做 *统一语言*。
 
-image::05-domain-model/model-sample-v2.jpg[领域模型 v2,80%,pdfwidth=80%,scaledwidth=80%,align="center",title="领域模型 v2"]
+image::05-domain-model/model-sample-v2.png[领域模型 v2,align="center",title="领域模型 v2"]
 
 
 和现实生活中一样，产生二义性的原因是因为我们的对话发生在不同的上下文中，我们在谈一个概念必须在确定的上下文中才有意义。在不同的场景下，即使使用的词汇相同，但是业务逻辑本质都是不同的。想象一下，发生在《武林外传》中同福客栈的几段对话。
 
-image::05-domain-model/conversation.png[关于上下文的对话,80%,pdfwidth=80%,scaledwidth=80%,align="center",title="关于上下文的对话"]
+image::05-domain-model/conversation.png[关于上下文的对话,align="center",title="关于上下文的对话"]
 
 
 这段对话中实际上有三个上下文，这里的 “菜” 这个词出现了三次，但是实际上业务含义完全不同。
@@ -152,7 +154,7 @@ image::05-domain-model/conversation.png[关于上下文的对话,80%,pdfwidth=80
 
 我们把语言再次统一，得到新的模型。
 
-image::05-domain-model/model-sample-v3.jpg[领域模型 v3,80%,pdfwidth=80%,scaledwidth=80%,align="center",title="领域模型 v3"]
+image::05-domain-model/model-sample-v3.png[领域模型 v3,align="center",title="领域模型 v3"]
 
 4个被虚线框起来的区域中，我们都可以使用 “菜品” 这个词汇（尽量不要这么做），但大家都明确 ”菜品“ 具有不同的含义。这个区域被叫做 *上下文*。当然上下文不只是由二义性决定的，还有可能是完全不相干的概念产生，例如订单和座位实际概念上并没有强烈的关联关系，我们在谈座位的时候完全在谈别的东西，所以座位也应该是单独的上下文。
 
@@ -160,7 +162,7 @@ image::05-domain-model/model-sample-v3.jpg[领域模型 v3,80%,pdfwidth=80%,scal
 
 限界上下文的识别难以有一个明确的准则，上下文的边界非常模糊，需要有经验的工程师并充分讨论才能得到一个好的设计。同时需要注意，限界上下文的划分没有对错，只有是否合适。跨限界上下文之间模型的关联有本质的不同，我们用虚线标出，后面会聊到这种区别。
 
-image::05-domain-model/model-sample-v4.jpg[领域模型 v4,80%,pdfwidth=80%,scaledwidth=80%,align="center",title="领域模型 v4"]
+image::05-domain-model/model-sample-v4.png[领域模型 v4,align="center",title="领域模型 v4"]
 
 使用上下文之后，带来另外一个收获。模型之间本质上没有多对多关系，如果有，说明存在一个隐含的成员关系，这个关系没有被充分的分析出来，对后期的开发会造成非常大的困扰。
 
@@ -176,7 +178,7 @@ image::05-domain-model/model-sample-v4.jpg[领域模型 v4,80%,pdfwidth=80%,scal
 
 相对于非聚合根的模型，我们叫做**实体**。
 
-image::05-domain-model/model-sample-v5.jpg[领域模型 v5,80%,pdfwidth=80%,scaledwidth=80%,align="center",title="领域模型 v5"]
+image::05-domain-model/model-sample-v5.png[领域模型 v5,align="center",title="领域模型 v5"]
 
 我们把这个图完善一下，聚合之间也是用虚线链接，为聚合根标上更深一点的颜色。识别聚合根需要一些技巧。
 
@@ -226,7 +228,7 @@ public clsss Price(){
 
 我们使用浅色区别值对象和实体，更新后的模型图如下：
 
-image::05-domain-model/model-sample-v6.jpg[领域模型 v6,80%,pdfwidth=80%,scaledwidth=80%,align="center",title="领域模型 v6"]
+image::05-domain-model/model-sample-v6.png[领域模型 v6,align="center",title="领域模型 v6"]
 
 虽然我们使用 E-R 的方式描述模型和模型之间的关系，但是这个 E-R 图使用了颜色（如果是黑白印刷的纸质版可能看不到具体的颜色，可以自行体会即可）、虚线，已经和传统的 E-R 图大不相同，把这种图暂时叫做 *CE-R* 图（Classified Entity Relationship）。DDD 没有规定如何画图，你可以使用其他任何画图的方法表达领域模型，如果需要严谨一点可以采用 UML 的类图绘制。
 
@@ -266,7 +268,7 @@ Event Storming 的逻辑是什么？为什么需要先从事件开始分析？�
 
 用例由参与者、关系、用例三个基本元素构成，用例图的基本表示方法如下：
 
-image::05-domain-model/usecase-diagram.jpg[用例图,80%,pdfwidth=80%,scaledwidth=80%,align="center",title="用例图"]
+image::05-domain-model/usecase-diagram.png[用例图,align="center",title="用例图"]
 
 通过用例图来提取领域模型的方法如下：
 
@@ -388,11 +390,11 @@ Play 建模法有几个特点。有明确的职责转移，容易找出上下文
 
 我们的项目有是一种多空间模型，也就是用户可以处于不同的空间，在不同的空间中可以访问空间中的资源。一个空间可以拥有多个用户，用户可以出现在多个空间中。看起来和编程老师在数据库课程中的多对多关系没有区别。
 
-image::05-domain-model/many-to-many-problem-1.jpg[多对多关系,80%,pdfwidth=80%,scaledwidth=80%,align="center",title="多对多关系"]
+image::05-domain-model/many-to-many-problem-1.png[多对多关系,align="center",title="多对多关系"]
 
 对于数据库来说，多对多关系需要一个中间表，一般会使用类似 workspace_user_relation 的名称。假如不对这个中间模型进一步分析，可能会得到 E-R 模型如下。
 
-image::05-domain-model/many-to-many-problem-2.jpg[不确定的中间模型,80%,pdfwidth=80%,scaledwidth=80%,align="center",title="不确定的中间模型"]
+image::05-domain-model/many-to-many-problem-2.png[不确定的中间模型,align="center",title="不确定的中间模型"]
 
 团队使用了 JPA 的 @ManyToMany 注解，导致 workspace 和 user 两个对象无时不刻在一起了。另外，通过 user 可以操作 workspace，通过 workspace 也可以获得 user。
 
@@ -432,7 +434,7 @@ image::05-domain-model/many-to-many-problem-2.jpg[不确定的中间模型,80%,p
 
 真真实的例子中，我们使用了空间成员来作为这个隐藏模型的名字，因此空间和用户的关系被拆解为 “空间拥有多个成员” 和 “成员可以引用用户” 两个关系。
 
-image::05-domain-model/many-to-many-problem-3.jpg[确定的中间模型,80%,pdfwidth=80%,scaledwidth=80%,align="center",title="确定的中间模型"]
+image::05-domain-model/many-to-many-problem-3.png[确定的中间模型,align="center",title="确定的中间模型"]
 
 ==== 另外一个例子
 
@@ -446,7 +448,7 @@ image::05-domain-model/many-to-many-problem-3.jpg[确定的中间模型,80%,pdfw
 
 如果标签跟随具体的业务走，那么隐藏的中间模型就是具体的业务中的一个概念，比如文章专题中的标签、文章中的标签。通过这样的处理，可以让系统解耦良好。不过，代价是聚合搜索能力需要额外的技术来实现。
 
-image::05-domain-model/many-to-many-problem-4.jpg[中间模型跟随的两个方向,80%,pdfwidth=80%,scaledwidth=80%,align="center",title="中间模型跟随的两个方向"]
+image::05-domain-model/many-to-many-problem-4.png[中间模型跟随的两个方向,align="center",title="中间模型跟随的两个方向"]
 
 这个例子充分说明了模型的建立需要为业务服务，业务人员往往需要明确其业务重心，并做出一些权衡和取舍才能设计出合适的模型。
 

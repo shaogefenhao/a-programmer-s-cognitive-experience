@@ -31,7 +31,7 @@
 
 让我们先看下主从调度模型的基本形态是什么样的，它能指导我们加深对团队的认识吗？这种系统由两个主要的角色构成：Dispatcher 和 Worker，这是主从调度模型的基本逻辑。
 
-image::07-think-team-in-system/basic-model.jpg[基本模型,80%,pdfwidth=80%,scaledwidth=80%,align="center",title="基本模型"]
+image::07-think-team-in-system/basic-model.png[基本模型,align="center",title="基本模型"]
 
 回顾一下计算机系统中的这两个角色。基于负载均衡的无状态服务集群，负载均衡器充当了 Dispatcher 的角色，普通的服务器充当了 Worker 的角色；基于主从的 CI 构建系统 Jenkins，它的 Master 节点就是 Dispatcher 角色，负责处理任务调度，Slave 节点用于执行任务构建。
 
@@ -43,7 +43,7 @@ image::07-think-team-in-system/basic-model.jpg[基本模型,80%,pdfwidth=80%,sca
 
 承担一定的 Worker 职责是有好处的，如果不熟悉具体的工作是什么很难真正的承担 Dispatcher 的职责，分解的任务不具备可执行。
 
-image::07-think-team-in-system/basic-model-with-leader.jpg[Leader 的职能,80%,pdfwidth=80%,scaledwidth=80%,align="center",title="Leader 的职能"]
+image::07-think-team-in-system/basic-model-with-leader.jpg[Leader 的职能,align="center",title="Leader 的职能"]
 
 在基本模型中，也可以找到 Dispatcher 和 Worker 的主客体关系，这样更能辨明他们的职责关系。
 
@@ -57,7 +57,7 @@ image::07-think-team-in-system/basic-model-with-leader.jpg[Leader 的职能,80%,
 
 间接管理就形成了多层调度模型，也会产生中间节点。中间节点在上层的的角色就是 Worker，在下层就是 Dispatcher。
 
-image::07-think-team-in-system/basic-model-with-leader-and-backup.jpg[多层结构,80%,pdfwidth=80%,scaledwidth=80%,align="center",title="多层结构"]
+image::07-think-team-in-system/basic-model-with-leader-and-backup.jpg[多层结构,align="center",title="多层结构"]
 
 在多层模型中，我们可以将系统看做一个由多个子系统符合的系统。为了度量系统的健康状态，需要引入两个概念：
 
@@ -76,7 +76,7 @@ image::07-think-team-in-system/basic-model-with-leader-and-backup.jpg[多层结�
 
 有时候这种场景是刻意为之，比如在应届生招聘时，会通过群体面试的方式设计无领导小组进行面试。目的是，通过竞争、选举、冲突寻找具有领导能力的潜在调度者。
 
-image::07-think-team-in-system/friction-without-leader.jpg[摩擦-无领导小组,80%,pdfwidth=80%,scaledwidth=80%,align="center",title="摩擦-无领导小组"]
+image::07-think-team-in-system/friction-without-leader.jpg[摩擦-无领导小组,align="center",title="摩擦-无领导小组"]
 
 ==== 多任务流团队
 
@@ -84,7 +84,7 @@ image::07-think-team-in-system/friction-without-leader.jpg[摩擦-无领导小�
 
 答案否定的，在分布式系统中，避免这样的模型：多个承担有 Worker 角色的 Dispatcher 构成系统，它会带来状态的一致性问题。在团队管理中，Dispatcher 的负载不会太大，但是需要保证一致性。在一个团队中出现 2 个 PM 会是一个灾难，然而这种场景在各个公司反复上演。
 
-image::07-think-team-in-system/friction-mutiple-task-flow.jpg[摩擦-多任务流团队,80%,pdfwidth=80%,scaledwidth=80%,align="center",title="摩擦-多任务流团队"]
+image::07-think-team-in-system/friction-mutiple-task-flow.jpg[摩擦-多任务流团队,align="center",title="摩擦-多任务流团队"]
 
 这种情况发生在团队出现 2 个事实调度者，当执行者需要接收多个调度者的任务时，会发生下面问题:
 
@@ -98,7 +98,7 @@ image::07-think-team-in-system/friction-mutiple-task-flow.jpg[摩擦-多任务�
 
 跨级指挥的出现在中间层指挥体系失效的情况。
 
-image::07-think-team-in-system/friction-cross-layer-task-flow.jpg[摩擦-跨级指挥,80%,pdfwidth=80%,scaledwidth=80%,align="center",title="摩擦-跨级指挥"]
+image::07-think-team-in-system/friction-cross-layer-task-flow.jpg[摩擦-跨级指挥,align="center",title="摩擦-跨级指挥"]
 
 ==== 无上升通道的团队
 
@@ -106,7 +106,7 @@ image::07-think-team-in-system/friction-cross-layer-task-flow.jpg[摩擦-跨级�
 
 在这种团队中执行者和调度者都没有足够的主观能动性。
 
-image::07-think-team-in-system/friction-no-promotion.jpg[摩擦-无上升通道的团队,80%,pdfwidth=80%,scaledwidth=80%,align="center",title="摩擦-无上升通道的团队"]
+image::07-think-team-in-system/friction-no-promotion.jpg[摩擦-无上升通道的团队,align="center",title="摩擦-无上升通道的团队"]
 
 另外一种情况造成无上升通道问题的原因是，高层对团队彻底失去信心，决定从外部或者其他团队空降 Dispatcher 从而对抱有升职的现有团队成员造成打击。
 
@@ -116,7 +116,7 @@ image::07-think-team-in-system/friction-no-promotion.jpg[摩擦-无上升通道�
 
 和无领导小组不同的是，团队中存在名义上的调度者，阻挡了其他成员补齐这个位置的动力。但民间自发出现调度者时，会造成民间调度者和名义上调度者之间的冲突。
 
-image::07-think-team-in-system/friction-puppet-leader.jpg[摩擦-傀儡 Leader,80%,pdfwidth=80%,scaledwidth=80%,align="center",title="摩擦-傀儡 Leader"]
+image::07-think-team-in-system/friction-puppet-leader.jpg[摩擦-傀儡 Leader,align="center",title="摩擦-傀儡 Leader"]
 
 ==== 激励失效
 
@@ -124,7 +124,7 @@ image::07-think-team-in-system/friction-puppet-leader.jpg[摩擦-傀儡 Leader,8
 
 在多级的团队系统中，每一层都需要存在相应的激励。激励体系需要建立一个正反馈，符合“劳者多得”而不是“能者多劳”的局面。
 
-image::07-think-team-in-system/friction-blocked-incentive.jpg[摩擦-激励失效,80%,pdfwidth=80%,scaledwidth=80%,align="center",title="摩擦-激励失效"]
+image::07-think-team-in-system/friction-blocked-incentive.jpg[摩擦-激励失效,align="center",title="摩擦-激励失效"]
 
 ==== 反馈失灵
 
@@ -132,7 +132,7 @@ image::07-think-team-in-system/friction-blocked-incentive.jpg[摩擦-激励失�
 
 反馈失灵虽然不会短期影响团队运行状态，但是系统会持续性恶化。
 
-image::07-think-team-in-system/friction-blocked-feedback.jpg[摩擦-反馈失灵,80%,pdfwidth=80%,scaledwidth=80%,align="center",title="摩擦-反馈失灵"]
+image::07-think-team-in-system/friction-blocked-feedback.jpg[摩擦-反馈失灵,align="center",title="摩擦-反馈失灵"]
 
 ==== 7.2.4 主从调度模型的特点和局限性
 
@@ -168,7 +168,7 @@ Worker 的主动性受到抑制，工作由 Dispatcher 分配。即使让 Worker
 
 这种系统出现在层级较为扁平的公司，各个团队相对独立和灵活，对于那种巨型公司的上层结构也符合这个模型。对于市场经济为主体的国家来说，整个经济体就是这个模型，所以我借用了市场这个词。
 
-image::07-think-team-in-system/marketing-model.jpg[市场模型,80%,pdfwidth=80%,scaledwidth=80%,align="center",title="市场模型市场模型"]
+image::07-think-team-in-system/marketing-model.jpg[市场模型,align="center",title="市场模型市场模型"]
 
 在分布式的计算机系统中，这种模型比较少见，在一些弹性扩容的系统中可以看做这种模型的简单实现。这是因为计算机科学基础决定了的，计算机科学建立在离散数学上，我们使用的计算模型为图灵模型，图灵模型是一种确定的计算模型（可计算性）。反馈调节模型不是一种确定的计算模型，目前的超计算（Hyper computation ）就是在研究如何在计算机中应用这类模型。
 
@@ -233,7 +233,7 @@ image::07-think-team-in-system/marketing-model.jpg[市场模型,80%,pdfwidth=80%
 
 我们往往只强调了其中一个方面，于是错失了激励团队的最有效的手段。
 
-image::07-think-team-in-system/incentive.jpg[激励方法,80%,pdfwidth=80%,scaledwidth=80%,align="center",title="激励方法"]
+image::07-think-team-in-system/incentive.jpg[激励方法,align="center",title="激励方法"]
 
 关于摩擦的部分，我们在前面已经分析的非常多了。那么给团队输入能量的方法有哪些呢？
 
@@ -285,7 +285,7 @@ image::07-think-team-in-system/incentive.jpg[激励方法,80%,pdfwidth=80%,scale
 
 在反馈调节的模型中，个体（玩家团队中的 Dispatcher 或者 Worker）需要成为一个玩家，需要从把关注点放到需求和服务上，识别到市场中微小的需求，想办法满足它。
 
-image::07-think-team-in-system/promotion-flow.jpg[上升通道,80%,pdfwidth=80%,scaledwidth=80%,align="center",title="上升通道"]
+image::07-think-team-in-system/promotion-flow.jpg[上升通道,align="center",title="上升通道"]
 
 ==== 躲避 “PUA”
 

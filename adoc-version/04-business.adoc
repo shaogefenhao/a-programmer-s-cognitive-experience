@@ -398,7 +398,7 @@ image::./04-business/user-journey-with-service-blueprint.png/[服务蓝图和用
 
 所以能通过一些现象来佐证这一点。一些传统公司在数字化转型时，往往会单独拎出来一家公司（法人主体）承担软件开发职责。这是一个矛盾，老板既希望业务和 IT 走得更近便于协作，IT 能深刻的理解业务和商业背景。但是鉴于管理上的原因和权责利的平衡，又不希望他们走得更近。
 
-image::./04-business/app-service-blueprint-sample.png/[应用服务蓝图,align="center",title="应用服务蓝图"]
+image::./04-business/app-service-blueprint-sample.jpg[应用服务蓝图,align="center",title="应用服务蓝图"]
 
 === 4.5 产品设计经济性原则
 
