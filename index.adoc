@@ -8,7 +8,7 @@
 :toclevels: 2
 :toc-title: 《程序员的认知心得》
 :icons: font
-//:imagesdir:./chapters
+:imagesdir: ./chapters
 :data-uri:
 :lang: zh_CN
 :language: java
@@ -19,31 +19,31 @@
 :figure-caption: 图
 
 [00-preface-1]
-include::00-preface-1.adoc[]
+include::./chapters/00-preface-1.adoc[]
 
 [00-preface-2]
-include::00-preface-2.adoc[]
+include::./chapters/00-preface-2.adoc[]
 
 [01-philosophy-in-software]
-include::01-philosophy-in-software.adoc[]
+include::./chapters/01-philosophy-in-software.adoc[]
 
 [02-logic-in-software]
-include::02-logic-in-software.adoc[]
+include::./chapters/02-logic-in-software.adoc[]
 
 [03-model-thinking]
-include::03-model-thinking.adoc[]
+include::./chapters/03-model-thinking.adoc[]
 
 [04-business]
-include::04-business.adoc[]
+include::./chapters/04-business.adoc[]
 
 [05-domain-model]
-include::05-domain-model.adoc[]
+include::./chapters/05-domain-model.adoc[]
 
 [06-architecture]
-include::06-architecture.adoc[]
+include::./chapters/06-architecture.adoc[]
 
 [07-think-team-in-system]
-include::07-think-team-in-system.adoc[]
+include::./chapters/07-think-team-in-system.adoc[]
 
 [11-ending]
-include::11-ending.adoc[]
+include::./chapters/11-ending.adoc[]
