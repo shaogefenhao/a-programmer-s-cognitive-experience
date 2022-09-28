@@ -12,6 +12,10 @@
 
 有缘看到这本电子书并产生兴趣的朋友可以一起交流，希望获得您宝贵的意见。
 
+HTML 版本访问地址：https://linksgo2011.github.io/a-programmer-s-cognitive-experience/
+
+PDF 下载地址：https://github.com/linksgo2011/a-programmer-s-cognitive-experience/releases/tag/v1.0.0
+
 == 电子书构建指南
 
 这本电子书最初使用 Markdown 构建，但是后来发现 Asciidoctor 相比 Markdown 更适合多章节的内容结构，因此切换为 Asciidoctor 构建。
