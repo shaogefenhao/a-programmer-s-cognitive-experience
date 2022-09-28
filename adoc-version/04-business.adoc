@@ -12,7 +12,7 @@
 
 完成产品设计后，需要找到真正理解软件开发人工程师或者架构师来设计领域模型、数据库、以及系统结构。 这套链路如此长，以至于过了多年的人们尤其是工程师，只看到了要做一个软件，忘记了为什么要做这个软件。如果工程师理解软件背后的商业目标，就可以理解业务的工作模式，那么也就可以对产品经理提出的需求进行补充、质疑和评审。 有时候当产品经理的设计不那么合理时，我们可能换一种简单的交互方式，就可以避免系统的巨大成本。因为对老板和业务人员来说，软件也只是手段而非目的，但是对于产品经理和软件工程师来说，这就是他们的目的。
 
-image::./04-business/logic-of-software.jpg[软件的逻辑和动机,80%,pdfwidth=80%,scaledwidth=80%,align="center",title="软件的逻辑和动机"]
+image::04-business/logic-of-software.png[软件的逻辑和动机,align="center",title="软件的逻辑和动机"]
 
 但是回头来看，如果说业务就是生意，那么就意味着业务等同于商业，但是如果就这样思考，会存在一个误区，很多软件的业务不是直接和钱相关，而是间接和钱相关。
 
@@ -30,7 +30,7 @@ image::./04-business/logic-of-software.jpg[软件的逻辑和动机,80%,pdfwidth
 
 虽然复杂的 CRM 系统会极其复杂，但是识别核心的业务关系并不会过于复杂。当识别到这些关键业务概念后，进一步展开看到具体的业务逻辑和流程就不会晕头转向。
 
-image::./04-business/easy-to-understand-software.jpg[快速理解业务,80%,pdfwidth=80%,scaledwidth=80%,align="center",title="快速理解业务"]
+image::04-business/easy-to-understand-software.png[快速理解业务,align="center",title="快速理解业务"]
 
 当然，并不是说通过这种方法就能真的完整的理解业务，而是作为了解业务的第一步。
 
@@ -76,7 +76,7 @@ image::./04-business/easy-to-understand-software.jpg[快速理解业务,80%,pdfw
 
 所以我们总结一下的软件的价值可以分为 4 层：
 
-image::./04-business/layers-of-software.jpg[软件价值模型,80%,pdfwidth=80%,scaledwidth=80%,align="center",title="软件价值模型"]
+image::04-business/layers-of-software.png[软件价值模型,align="center",title="软件价值模型"]
 
 当我们软件的业务架构和业务价值发生翻天覆地的变化时，修改这个软件的难度，会呈指数上升，不亚于重新设计一个软件。
 
@@ -124,7 +124,7 @@ image::./04-business/layers-of-software.jpg[软件价值模型,80%,pdfwidth=80%,
 
 商业模式画布，包含 9 个模块，可以呈现在一张画布上。如下图所示：
 
-image::04-business/business-canvas.png[商业模式画布,80%,pdfwidth=80%,scaledwidth=80%,align="center",title="商业模式画布"]
+image::04-business/business-canvas.png[商业模式画布,align="center",title="商业模式画布"]
 
 编写商业模式画布实际上是需要回答 9 个问题，弄明白至少这 9 个问题，才能知道对未来相关的商业设想是否靠谱。如果是投资人看这份商业模式画布，才能快速知道这笔生意是否能赚钱。
 
@@ -270,7 +270,7 @@ image::04-business/business-canvas.png[商业模式画布,80%,pdfwidth=80%,scale
 
 我找到了一份不错的服务蓝图定义和绘图模板（主要是好看），footnote:[来源于网络社群Nielsen Norman Group logoNielsen Norman Group 文章 Service Blueprints: Definition https://www.nngroup.com/articles/service-blueprints-definition] 的一篇文章。
 
-image::./04-business/service-blueprint-template.png[服务蓝图模板,80%,pdfwidth=80%,scaledwidth=80%,align="center",title="服务蓝图模板"]
+image::04-business/service-blueprint-template.png[服务蓝图模板,align="center",title="服务蓝图模板"]
 
 在这份模板中，服务蓝图包含 5 个主要元素：
 
@@ -300,7 +300,7 @@ image::./04-business/service-blueprint-template.png[服务蓝图模板,80%,pdfwi
 
 在具有固定合作关系的商业主体之间，往往都不会结算现款，都有一定的结算周期，通过结算单来完成结算，随之进行支付，某些情况下还会出现抵扣。
 
-image::./04-business/business-service-blueprint-sample.png[业务服务蓝图模板,80%,pdfwidth=80%,scaledwidth=80%,align="center",title="业务服务蓝图模板"]
+image::./04-business/business-service-blueprint-sample.png[业务服务蓝图模板,align="center",title="业务服务蓝图模板"]
 
 ==== 和用户旅程的关系
 
@@ -310,7 +310,7 @@ image::./04-business/business-service-blueprint-sample.png[业务服务蓝图模
 
 它们两者各有所长。在体验设计上，可以更关注用户旅程；从业务理解上，服务蓝图更加有用。有时候它们又可以相互补充，我们可以在合适的时候使用它们。
 
-image::./04-business/user-journey-with-service-blueprint.png/[服务蓝图和用户旅程的关系,80%,pdfwidth=80%,scaledwidth=80%,align="center",title="服务蓝图和用户旅程的关系"]
+image::./04-business/user-journey-with-service-blueprint.png/[服务蓝图和用户旅程的关系,align="center",title="服务蓝图和用户旅程的关系"]
 
 图片来源：https://blog.practicalservicedesign.com/the-difference-between-a-journey-map-and-a-service-blueprint-31a6e24c4a6c
 
@@ -398,7 +398,7 @@ image::./04-business/user-journey-with-service-blueprint.png/[服务蓝图和用
 
 所以能通过一些现象来佐证这一点。一些传统公司在数字化转型时，往往会单独拎出来一家公司（法人主体）承担软件开发职责。这是一个矛盾，老板既希望业务和 IT 走得更近便于协作，IT 能深刻的理解业务和商业背景。但是鉴于管理上的原因和权责利的平衡，又不希望他们走得更近。
 
-image::./04-business/app-service-blueprint-sample.png/[应用服务蓝图,80%,pdfwidth=80%,scaledwidth=80%,align="center",title="应用服务蓝图"]
+image::./04-business/app-service-blueprint-sample.png/[应用服务蓝图,align="center",title="应用服务蓝图"]
 
 === 4.5 产品设计经济性原则
 
