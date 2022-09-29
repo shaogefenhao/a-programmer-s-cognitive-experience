@@ -16,6 +16,19 @@ HTML 版本访问地址：https://linksgo2011.github.io/a-programmer-s-cognitive
 
 PDF 下载地址：https://github.com/linksgo2011/a-programmer-s-cognitive-experience/releases/tag/v1.0.0
 
+
+== 电子书校对和批注正在进行中
+
+虽然是一本简单的电子书，但是还是希望能严肃的对待，所以开启了一个 PR 来收集相关问题和反馈。
+
+配合HTML、PDF 阅读方式后，在 PR 中提交问题即可。
+
+PR 地址：[https://github.com/linksgo2011/a-programmer-s-cognitive-experience/pull/3/files?file-filters%5B%5D=.adoc&show-deleted-files=false&show-viewed-files=false]
+
+上面的 PR 连接带有过滤条件，可以更聚焦，过滤条件如下：
+
+image::review.png[批注]
+
 == 电子书构建指南
 
 这本电子书最初使用 Markdown 构建，但是后来发现 Asciidoctor 相比 Markdown 更适合多章节的内容结构，因此切换为 Asciidoctor 构建。
