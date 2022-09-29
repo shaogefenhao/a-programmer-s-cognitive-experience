@@ -67,7 +67,7 @@ Docker 安装
 
 image::https://licensebuttons.net/l/by-sa/4.0/88x31.png[copyright]
 
-=== 参考资料
+== 参考资料
 
 - https://docs.asciidoctor.org
 - Asciidoctor PDF Theming Guide for CJK issue https://github.com/asciidoctor/asciidoctor-pdf/blob/v1.5.0.beta.7/docs/theming-guide.adoc#custom-fonts
