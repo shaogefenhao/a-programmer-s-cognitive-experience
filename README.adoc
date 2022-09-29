@@ -61,6 +61,12 @@ Docker 安装
 
 运行命令和本地一致。
 
+== 版权说明
+
+本电子书为非盈利性质项目，采用 CC0 1.0 Universal 协议发布，
+
+image::https://licensebuttons.net/l/by-sa/4.0/88x31.png[copyright]
+
 === 参考资料
 
 - https://docs.asciidoctor.org
