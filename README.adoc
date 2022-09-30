@@ -12,7 +12,7 @@
 
 有缘看到这本电子书并产生兴趣的朋友可以一起交流，希望获得您宝贵的意见。
 
-HTML 版本访问地址：https://linksgo2011.github.io/a-programmer-s-cognitive-experience/
+HTML 版本访问地址：http://renzhi.shaogefenhao.com/
 
 PDF 下载地址：https://github.com/linksgo2011/a-programmer-s-cognitive-experience/releases/tag/v1.0.0
 
