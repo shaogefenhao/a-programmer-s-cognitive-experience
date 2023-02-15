@@ -298,7 +298,7 @@ image::05-domain-model/usecase-diagram.png[用例图,align="center",title="用�
 . 最后把描述的信息放入描述对象，附着在需要补充的对象上。
 . 梳理为最终的模型。
 
-四色建模法由 Peter Coad 提出，其实并不是一种非常主流的建模方式，其原因为存根和时标性对象在很多业务系统中并不容易找到。
+四色建模法由 Peter Coad 提出 footnote:[关于四色建模法来源见文章 https://www.infoq.cn/article/xh-four-color-modeling]，其实并不是一种非常主流的建模方式，其原因为存根和时标性对象在很多业务系统中并不容易找到。
 
 ==== 事件风暴
 
