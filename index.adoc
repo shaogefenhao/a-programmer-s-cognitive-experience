@@ -45,5 +45,8 @@ include::./chapters/06-architecture.adoc[]
 [07-think-team-in-system]
 include::./chapters/07-think-team-in-system.adoc[]
 
+[08-politics]
+include::./chapters/08-politics.adoc[]
+
 [11-ending]
 include::./chapters/11-ending.adoc[]
