@@ -168,9 +168,9 @@ image::03-model-thinking/von-neumann-model.png[冯诺依曼简化模型,align="c
 
 . 词法（Lexical）：决定哪些表达式、关键字是否合法。
 . 句法（Syntax）：决定一个句子是否合法，比如流程语句。
-. 语义（Srammar）：决定一段代码的组织结构是否合法，函数、类、闭包等规则。
+. 语义（Grammar）：决定一段代码的组织结构是否合法，函数、类、闭包等规则。
 
-Lexical 和 Syntax 往往可以看成一体，Srammar 不太一样，在一些编译器中 Syntax 和 Srammar 的错误提示都不太一样。所以可以这样看一门语言：Syntax 是类 C 的还是非类 C 的，Srammar 上是面向对象的还是面向过程的，是否支持闭包这类上下文追溯的能力。
+Lexical 和 Syntax 往往可以看成一体，Grammar 不太一样，在一些编译器中 Syntax 和 Grammar 的错误提示都不太一样。所以可以这样看一门语言：Syntax 是类 C 的还是非类 C 的，Grammar 上是面向对象的还是面向过程的，是否支持闭包这类上下文追溯的能力。
 
 理解推理模型可以用来帮助学习编程语言，比如 TypeScript 可以编译成 JavaScript，很多时候我们不需要特别学习 TypeScript，将小段 TypeScript 代码编译一下，看看生成的 JavaScript 是什么就行了。
 
