@@ -49,6 +49,12 @@ Mac 安装 Asciidoctor：
 
  $ asciidoctor-pdf -a pdf-theme=./themes/cjk-theme.yml -a pdf-fontsdir="./themes;GEM_FONTS_DIR" -a scripts=cjk -o output/a-programmer-s-cognitive-experience.pdf index.adoc
 
+生成多页 HTML：
+
+$ gem install asciidoctor-multipage
+
+$ asciidoctor -r asciidoctor-multipage -b multipage_html5 -D output index.adoc
+
 === Docker 容器命令
 
 Docker 安装
