@@ -18,6 +18,7 @@
 :last-update-label: 最近更新
 :figure-caption: 图
 
+[preface]
 == 写在前面
 [00-preface-1]
 include::./chapters/00-preface-1.adoc[]

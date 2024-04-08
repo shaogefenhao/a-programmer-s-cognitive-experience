@@ -19,3 +19,6 @@ kbd:
   font-family: $codespan-font-family
 code:
   font-family: $codespan-font-family
+cover:
+  front:
+    image: image:cover.pdf[]
