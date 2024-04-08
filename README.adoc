@@ -53,7 +53,7 @@ Mac 安装 Asciidoctor：
 
 $ gem install asciidoctor-multipage
 
-$ asciidoctor -r asciidoctor-multipage -b multipage_html5 -D output index.adoc
+$ asciidoctor-multipage -D  output index.adoc
 
 === Docker 容器命令
 

@@ -5,7 +5,7 @@
 :revdate: 2022-10-01
 :doctype: book
 :toc: left
-:toclevels: 5
+:toclevels: 3
 :toc-title: 《程序员的认知心得》
 :icons: font
 :imagesdir: ./chapters
