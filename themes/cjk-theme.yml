@@ -3,14 +3,18 @@ font:
   catalog:
     merge: true
     Noto Sans CN: NotoSansCJKsc-VF.ttf
+    Noto Serif CN: NotoSerifCJKsc-VF.ttf
     Noto Sans Mono CN: NotoSansMonoCJKsc-VF.ttf
   fallbacks:
-    - Noto Serif
+    - Noto Sans CN
 base:
   align: left
   text-align: left
   font-color: #000000
-  font-family: Noto Sans CN
+  font-family: Noto Serif CN
+  font-size: 10.5pt
+  line-height: 1.5
+  base-line-height: 1.5
 heading:
   font-color: #000000
 codespan:
@@ -21,4 +25,4 @@ code:
   font-family: $codespan-font-family
 cover:
   front:
-    image: image:cover.pdf[]
+    image: image:cover B5.pdf[]

@@ -17,6 +17,7 @@
 :version-label: 版本
 :last-update-label: 最近更新
 :figure-caption: 图
+:pdf-page-size: B5
 
 [preface]
 == 写在前面
