@@ -1,8 +1,8 @@
 = 《程序员的认知心得》
 :author: 少个分号
 :email: 12037783@qq.com
-:revnumber: 0.1
-:revdate: 2022-10-01
+:revnumber: 1.0
+:revdate: 2024-04-14
 :doctype: book
 :toc: left
 :toclevels: 2

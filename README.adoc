@@ -73,6 +73,10 @@ Docker 安装
 
 image::https://licensebuttons.net/l/by-sa/4.0/88x31.png[copyright]
 
+== 印刷需求
+
+根据 cjk-theme.yml 配置，最佳印刷需求为：B5、双面、黑白、牛皮纸胶装、首页封面。
+
 == 参考资料
 
 - https://docs.asciidoctor.org
