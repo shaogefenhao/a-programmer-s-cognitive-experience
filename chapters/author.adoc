@@ -1,0 +1,12 @@
+[%always]
+<<<
+
+如果需要联系我，可以通过以下途径：
+
+1. 微信公众号：TechLead 少个分号
+2. 网站：http://shaogefenhao.com/
+3. 微信：shaogefenhao
+
+公众号二维码:
+
+image::author/wechat-oa.jpg[width=30%]

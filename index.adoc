@@ -1,0 +1,65 @@
+= 《程序员的认知心得》
+:author: 少个分号
+:email: 12037783@qq.com
+:revnumber: 1.0
+:revdate: 2024-04-14
+:doctype: book
+:toc: left
+:toclevels: 2
+:toc-title: 《程序员的认知心得》
+:icons: font
+:imagesdir: ./chapters
+:data-uri:
+:lang: zh_CN
+:language: java
+:toc-title: 目录
+:preface-title: 前言
+:version-label: 版本
+:last-update-label: 最近更新
+:figure-caption: 图
+:pdf-page-size: B5
+
+[preface]
+== 写在前面
+[00-preface-1]
+include::./chapters/00-preface-1.adoc[]
+
+== 认知变化的来源
+[00-preface-2]
+include::./chapters/00-preface-2.adoc[]
+
+== 第 1 章 软件工程中的哲学
+[01-philosophy-in-software]
+include::./chapters/01-philosophy-in-software.adoc[]
+
+== 第 2 章 软件工程中的逻辑学
+[02-logic-in-software]
+include::./chapters/02-logic-in-software.adoc[]
+
+== 第 3 章 编程中的模型思维
+[03-model-thinking]
+include::./chapters/03-model-thinking.adoc[]
+
+== 第 4 章 理解软件背后的生意
+[04-business]
+include::./chapters/04-business.adoc[]
+
+== 第 5 章 领域建模，设计软件的骨相
+[05-domain-model]
+include::./chapters/05-domain-model.adoc[]
+
+== 第 6 章 分层，软件架构和实现
+[06-architecture]
+include::./chapters/06-architecture.adoc[]
+
+== 第 7 章 把软件团队也看做系统
+[07-think-team-in-system]
+include::./chapters/07-think-team-in-system.adoc[]
+
+== 第 8 章 软件工程中的政治
+[08-politics]
+include::./chapters/08-politics.adoc[]
+
+== 结束语
+[11-ending]
+include::./chapters/11-ending.adoc[]
