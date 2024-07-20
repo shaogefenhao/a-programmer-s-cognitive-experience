@@ -9,4 +9,4 @@
 
 公众号二维码:
 
-image::00-preface-1/wechat-oa.jpg[width=30%]
+image::author/wechat-oa.jpg[width=30%]

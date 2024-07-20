@@ -45,6 +45,10 @@ Mac 安装 Asciidoctor：
 
  $ asciidoctor -vwt -o output/a-programmer-s-cognitive-experience.html index.adoc
 
+生成 EPUB：
+
+ $ asciidoctor-epub3 -a 00-preface-1.adoc:imagesdir=00-preface-1 -o output/a-programmer-s-cognitive-experience.epub index.adoc
+
 生成 PDF：
 
  $ asciidoctor-pdf -a pdf-theme=./themes/cjk-theme.yml -a pdf-fontsdir="./themes;GEM_FONTS_DIR" -a scripts=cjk -o output/a-programmer-s-cognitive-experience.pdf index.adoc
@@ -52,7 +56,6 @@ Mac 安装 Asciidoctor：
 生成多页 HTML：
 
 $ gem install asciidoctor-multipage
-
 $ asciidoctor-multipage -D  output index.adoc
 
 === Docker 容器命令
